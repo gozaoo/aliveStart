@@ -1,0 +1,37 @@
+@font-face {
+  font-family: harmonyOS;
+  src: local('HarmonyOS Sans SC'), url('./assets//HarmonyOS_Sans_SC_Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LXGWWenKai;
+  src: local('LXGWWenKai'), url('./assets//LXGWWenKai-Regular.ttf');
+  font-display: swap;
+}
+
+*,* *{
+  font-family: harmonyOS;
+}
+body{
+  --paddingValueh: 10vh;
+  margin: 0 ;
+  padding: var(--paddingValueh) var(--paddingValue);
+  position: relative;
+  box-sizing: content-box;
+  --paddingValue: 18vw
+}
+
+@media (max-width: 820px) {
+  body{
+    --paddingValue: 10vw;
+    --paddingValueh: 10vh
+  }
+}
+
+@media (max-width: 450px) {
+  body{
+    margin: 0 ;
+    --paddingValue:6vw;
+  }
+}
